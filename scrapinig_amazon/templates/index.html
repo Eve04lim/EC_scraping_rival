@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}EC業務自動化ダッシュボード{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">EC業務自動化ダッシュボード</h1>
+    <p class="lead">Amazonの競合製品情報を簡単にスクレイピングできます。</p>
+</div>
+
+<section>
+    <h2>Amazon競合製品スクレイピング</h2>
+    <form action="/" method="post" class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" name="seller_url" class="form-control" placeholder="競合セラーのURL" required>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">スクレイピング</button>
+    </form>
+</section>
+{% endblock %}

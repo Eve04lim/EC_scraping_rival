@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}スクレイピング結果{% endblock %}
+
+{% block content %}
+<section>
+    <h2>スクレイピング結果</h2>
+    {% if products %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>タイトル</th>
+                <th>価格</th>
+                <th>リンク</th>
+                <th>需要</th>
+                <th>ASIN</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.title }}</td>
+                <td>{{ product.price }}</td>
+                <td><a href="{{ product.link }}" target="_blank">リンク</a></td>
+                <td>{{ product.demand }}</td>
+                <td>{{ product.asin }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>データがありません。</p>
+    {% endif %}
+    <a href="/" class="btn btn-primary">戻る</a>
+</section>
+{% endblock %}

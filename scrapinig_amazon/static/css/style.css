@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.jumbotron {
+    background-color: #007bff; /* 背景色を青色に */
+    color: #ffffff; /* 文字色を白色に */
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #343a40;
+}
+
+.navbar a.navbar-brand, .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar a.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #f4f4f9;
+}
